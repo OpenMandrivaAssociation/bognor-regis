@@ -2,14 +2,21 @@
 %define libname         %mklibname %{name} %{major}
 %define develname       %mklibname %{name} -d
 
+%define version 0.4.10
+%define rel 1
+%define snapshot git20091001
+%define release %mkrel 0.%{snapshot}.%{rel}
+
+%define sversion %{version}%{snapshot}
+
 Name: bognor-regis
 Summary: Media daemon and play queue manager
 Group: Applications/Multimedia
-Version: 0.4.10git20091001
+Version: %{version}
 License: LGPLv2.1
 URL: http://www.moblin.org
-Release: %mkrel 1
-Source0: %{name}-%{version}.tar.gz
+Release: %{release}
+Source0: %{name}-%{sversion}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: glib2-devel
@@ -38,7 +45,7 @@ Requires: %{libname} >= %{version}
 Bognor Regis development environment
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{sversion}
 
 %build
 ./autogen.sh
