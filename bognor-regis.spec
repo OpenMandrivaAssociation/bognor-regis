@@ -46,6 +46,7 @@ Bognor Regis development environment
 
 %prep
 %setup -q -n %{name}-%{sversion}
+perl -pi -e 's,^./configure.*,,' ./autogen.sh
 
 %build
 ./autogen.sh
