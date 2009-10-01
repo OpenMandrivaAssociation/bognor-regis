@@ -22,6 +22,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: glib2-devel
 BuildRequires: libdbus-glib-devel
 BuildRequires: libgstreamer-devel
+BuildRequires: libGConf2-devel
 
 %description
 Media daemon and play queue manager
