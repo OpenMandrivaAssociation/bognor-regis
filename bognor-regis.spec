@@ -11,7 +11,7 @@
 
 Name: bognor-regis
 Summary: Media daemon and play queue manager
-Group: Applications/Multimedia
+Group: Graphical desktop/Other
 Version: %{version}
 License: LGPLv2.1
 URL: http://www.moblin.org
