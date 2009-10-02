@@ -41,7 +41,6 @@ Summary: Bognor Regis development environment
 Group: Development/C
 
 Requires: %{libname} = %{version}-%{release}
-Requires: pkgconfig
 Provides: %{name}-devel
 
 %description -n %{develname}
