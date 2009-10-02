@@ -32,6 +32,7 @@ Media daemon and play queue manager
 %package -n %{libname}
 Group: System/Libraries
 Summary: Media daemon and play queue manager
+Requires: %{name}
 
 %description -n %{libname}
 Bognor Regis library
