@@ -23,6 +23,7 @@ BuildRequires: glib2-devel
 BuildRequires: libdbus-glib-devel
 BuildRequires: libgstreamer-devel
 BuildRequires: libGConf2-devel
+BuildRequires: intltool
 
 %description
 Media daemon and play queue manager
