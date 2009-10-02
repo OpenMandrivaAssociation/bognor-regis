@@ -20,6 +20,7 @@ Source0: %{name}-%{sversion}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: glib2-devel
+BuildRequires: libgtk+2.0-devel
 BuildRequires: libdbus-glib-devel
 BuildRequires: libgstreamer-devel
 BuildRequires: libGConf2-devel
