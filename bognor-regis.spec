@@ -38,7 +38,7 @@ Bognor Regis library
 
 %package -n %{develname}
 Summary: Bognor Regis development environment
-Group: Development/Libraries
+Group: Development/C
 
 Requires: %{libname} = %{version}-%{release}
 Requires: pkgconfig
