@@ -3,8 +3,8 @@
 %define develname       %mklibname %{name} -d
 
 %define version 0.4.10
-%define rel 3
-%define snapshot git20091001
+%define rel 1
+%define snapshot git20091027
 %define release %mkrel 0.%{snapshot}.%{rel}
 
 %define sversion %{version}%{snapshot}
@@ -25,6 +25,7 @@ BuildRequires: libdbus-glib-devel
 BuildRequires: libgstreamer-devel
 BuildRequires: libGConf2-devel
 BuildRequires: intltool
+BuildRequires: libnotify-devel
 
 %description
 Media daemon and play queue manager
