@@ -2,9 +2,9 @@
 %define libname         %mklibname %{name} %{major}
 %define develname       %mklibname %{name} -d
 
-%define version 0.4.10
+%define version 0.5.0
 %define rel 1
-%define snapshot git20091027
+%define snapshot git20091029
 %define release %mkrel 0.%{snapshot}.%{rel}
 
 %define sversion %{version}%{snapshot}
