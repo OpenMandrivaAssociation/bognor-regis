@@ -3,7 +3,7 @@
 %define develname       %mklibname %{name} -d
 
 %define version 0.5.0
-%define rel 1
+%define rel 2
 %define snapshot git20091029
 %define release %mkrel 0.%{snapshot}.%{rel}
 
