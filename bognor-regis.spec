@@ -3,7 +3,7 @@
 %define develname       %mklibname %{name} -d
 
 %define version 0.5.0
-%define rel 2
+%define rel 3
 %define snapshot git20091029
 %define release %mkrel 0.%{snapshot}.%{rel}
 
@@ -17,13 +17,14 @@ License: LGPLv2.1
 URL: http://www.moblin.org
 Release: %{release}
 Source0: %{name}-%{sversion}.tar.gz
+Patch0: bognor-regis-0.5.0-libnotify.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: glib2-devel
 BuildRequires: libgtk+2.0-devel
 BuildRequires: libdbus-glib-devel
 BuildRequires: libgstreamer-devel
-BuildRequires: libGConf2-devel
+BuildRequires: libGConf2-devel GConf2
 BuildRequires: intltool
 BuildRequires: libnotify-devel
 
@@ -50,11 +51,12 @@ Bognor Regis development environment
 
 %prep
 %setup -q -n %{name}-%{sversion}
+%patch0 -p0
 perl -pi -e 's,^./configure.*,,' ./autogen.sh
 
 %build
 ./autogen.sh
-%configure
+%configure2_5x
 %make
 
 %install
