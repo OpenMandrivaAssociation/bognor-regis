@@ -1,0 +1,11 @@
+--- src/bognor-queue.c.libnotify	2011-04-14 12:03:07.000000000 +0200
++++ src/bognor-queue.c	2011-04-14 12:03:18.000000000 +0200
+@@ -696,7 +696,7 @@
+     g_free (unesc);
+ 
+     notification = notify_notification_new (_("We can't play this"),
+-                                            message, NULL, NULL);
++                                            message, NULL);
+     notify_notification_show (notification, NULL);
+     g_object_unref (notification);
+ 
