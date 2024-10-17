@@ -14,7 +14,7 @@ Summary: Media daemon and play queue manager
 Group: Graphical desktop/Other
 Version: %{version}
 License: LGPLv2.1
-URL: http://www.moblin.org
+URL: https://www.moblin.org
 Release: %{release}
 Source0: %{name}-%{sversion}.tar.gz
 Patch0: bognor-regis-0.5.0-libnotify.patch
