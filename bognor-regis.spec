@@ -20,6 +20,11 @@ Source0: %{name}-%{sversion}.tar.gz
 Patch0: bognor-regis-0.5.0-libnotify.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: glib2-devel
 BuildRequires: libgtk+2.0-devel
 BuildRequires: libdbus-glib-devel
